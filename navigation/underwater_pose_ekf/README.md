@@ -1,6 +1,6 @@
 [![Manta - Vortex NTNU](https://s3-us-west-1.amazonaws.com/udacity-robotics/Extra+Images/RoboND_flag.png)](https://www.udacity.com/robotics)
 
-# robot_pose_ekf package
+# underwater_pose_ekf package
 The [underwater_pose_ekf](http://wiki.ros.org/robot_pose_ekf) ROS package applies sensor fusion on the robot IMU and odometry values to estimate its 3D pose.
 
 ### Nodes
