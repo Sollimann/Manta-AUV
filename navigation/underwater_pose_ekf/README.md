@@ -1,11 +1,11 @@
-[![Udacity - Robotics NanoDegree Program](https://s3-us-west-1.amazonaws.com/udacity-robotics/Extra+Images/RoboND_flag.png)](https://www.udacity.com/robotics)
+[![Manta - Vortex NTNU](https://s3-us-west-1.amazonaws.com/udacity-robotics/Extra+Images/RoboND_flag.png)](https://www.udacity.com/robotics)
 
 # robot_pose_ekf package
-The [robot_pose_ekf](http://wiki.ros.org/robot_pose_ekf) ROS package applies sensor fusion on the robot IMU and odometry values to estimate its 3D pose.
+The [underwater_pose_ekf](http://wiki.ros.org/robot_pose_ekf) ROS package applies sensor fusion on the robot IMU and odometry values to estimate its 3D pose.
 
 ### Nodes
 The package contains a single node 
-1. **robot_pose_ekf**: Implements an Extended Kalman Filter, subscribes to robot measurements, and publishes a filtered 3D pose.
+1. **underwater_pose_ekf**: Implements an Extended Kalman Filter, subscribes to robot measurements, and publishes a filtered 3D pose.
       * Script File: wtf.py
       * Subscriber: "/odom", "/imu_data", and "/vo " 
       * Publisher: "/robot_pose_ekf/odom_combined"
@@ -13,10 +13,9 @@ The package contains a single node
 ![alt text](Images/Output.png)
 
 ### Steps to launch the nodes
-#### Step1: Install the package
+#### Step1: Install dependencies
 ```sh
-$ cd /home/workspace/catkin_ws/src/
-$ git clone https://github.com/udacity/robot_pose_ekf
+$ sudo apt-get install ros-kinetic-bfl
 ```
 #### Step2: Edit the robot_pose_ekf.launch file
 ```html
@@ -43,3 +42,8 @@ $ catkin_make
 $ source devel/setup.bash
 #### Step4: Launch the node
 $ roslaunch robot_pose_ekf robot_pose_ekf.launch
+
+# Futher info / Acknowledgments
+
+* Extended Kalman filter implementation is based on [robot_pose_ekf](http://wiki.ros.org/robot_pose_ekf).
+* This package contains a recent version of the [Bayesian Filtering Library (BFL)](http://wiki.ros.org/bfl)
