@@ -12,6 +12,8 @@ find_package(catkin REQUIRED COMPONENTS
   vortex
   vortex_estimator
   vortex_msgs
+  nav_msgs
+  std_msgs
 )
 
 
@@ -33,6 +35,8 @@ catkin_package(
   vortex 
   vortex_estimator 
   vortex_msgs
+  nav_msgs
+  std_msgs
   #DEPENDS system_lib
 )
 
