@@ -1,0 +1,61 @@
+material dragur
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture Dragur.png
+                filtering anistropic
+                max_anistropy 16
+            }
+        }
+    }
+}
+material aswang
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture Aswang.png
+                filtering anistropic
+                max_anistropy 16
+            }
+        }
+    }
+}
+material jiangshi
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture Jiangshi.png
+                filtering anistropic
+                max_anistropy 16
+            }
+        }
+    }
+}
+material vetalas
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture Vetalas.png
+                filtering anistropic
+                max_anistropy 16
+            }
+        }
+    }
+}
+

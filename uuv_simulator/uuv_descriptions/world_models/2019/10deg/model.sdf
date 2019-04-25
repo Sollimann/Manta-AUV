@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="10deg">
+    <static>true</static>
+    <link name="link">
+      <gravity>0</gravity>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://10deg/meshes/10deg.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://10deg/meshes/10deg.dae</uri>
+          </mesh>
+        </geometry>
+	<material>
+	  <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+	    <name>Gazebo/Orange</name>
+	  </script>
+	</material>            
+      </visual>
+    </link>
+  </model>
+</sdf>
